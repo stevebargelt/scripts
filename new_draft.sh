@@ -1,4 +1,4 @@
-function new_draft_post(){
+function new_draft(){
     cd ~/code/stevebargelt.com/_drafts
     SLUGIFIED="$(echo -n "$1" | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)"
     SLUG=($SLUGIFIED.md)
