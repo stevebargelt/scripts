@@ -1,5 +1,5 @@
 function new_draft(){
-    cd ~/code/stevebargelt.com/_drafts
+    cd ~/code/stevebargelt.github.io/_drafts
     SLUGIFIED="$(echo -n "$1" | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)"
     SLUG=($SLUGIFIED.md)
 

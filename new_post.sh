@@ -1,5 +1,5 @@
 function new_post(){
-    cd ~/code/stevebargelt.com/_posts
+    cd ~/code/stevebargelt.github.io/_posts
     SLUGIFIED="$(echo -n "$1" | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)"
     SLUG=$(date +"%Y-%m-%d"-$SLUGIFIED.md)
 
