@@ -7,7 +7,7 @@ function harbormaster(){
 
 #alias for harbormaster
 function hm() {
-	harbormaster
+	harbormaster $1
 }
 
 function gokata(){
@@ -26,21 +26,26 @@ function jenkinsDocker(){
 
 #alias for jenkinsDocker
 function jd(){
-	jenkinsDocker
+	jenkinsDocker $1
 }
 
-function text(){
-	cd /dropbox/text
+function notes(){
+	cd /users/steve/dropbox/notes
 	if [ "$1" = "e" ]; then
 		code .
 	fi
 }
 
-function blog(){
+function web(){
 	cd /users/steve/code/stevebargelt.github.io
 	if [ "$1" = "e" ]; then
 		code .
 	fi
+}
+
+#alias for web
+function blog(){
+	web $1
 }
 
 function ltn(){
