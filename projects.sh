@@ -1,13 +1,13 @@
-function harbormaster(){
-	cd /users/steve/code/go/src/github.com/stevebargelt/harbormaster
+function dockhand(){
+	cd /users/steve/code/go/src/github.com/stevebargelt/dockhand
 	if [ "$1" = "e" ]; then
 		code .
 	fi
 }
 
-#alias for harbormaster
-function hm() {
-	harbormaster $1
+#alias for dockhand
+function dh() {
+	dockhand $1
 }
 
 function gokata(){
