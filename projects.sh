@@ -37,7 +37,7 @@ function notes(){
 }
 
 function web(){
-	cd /users/steve/code/stevebargelt.github.io
+	cd /users/steve/code/stevebargelt.com
 	if [ "$1" = "e" ]; then
 		code .
 	fi
@@ -57,6 +57,20 @@ function ltn(){
 
 function scripts(){
 	cd /users/steve/code/scripts
+	if [ "$1" = "e" ]; then
+		code .
+	fi
+}
+
+function homeassistant(){
+	cd /users/steve/code/home-assistant-config
+	if [ "$1" = "e" ]; then
+		code .
+	fi
+}
+
+function ha(){
+	cd /users/steve/code/home-assistant-config
 	if [ "$1" = "e" ]; then
 		code .
 	fi
