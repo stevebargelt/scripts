@@ -9,11 +9,15 @@ alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
 alias less='less -FSRXc'                    # Preferred 'less' implementation
 cd() { builtin cd "$@"; ll; }  
 
+#Note Helpers
+source ~/code/scripts/new_note.sh
+
 #Blogging Helpers
-source ~/code/scripts/new_post.sh
 source ~/code/scripts/new_draft.sh
-source ~/code/scripts/publish_draft.sh
 source ~/code/scripts/note_to_draft.sh
+
+#Go Helpers
+source ~/code/scripts/newgo.sh
 
 #Project Helpers
 source ~/code/scripts/projects.sh

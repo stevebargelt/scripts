@@ -1,22 +1,24 @@
 function new_draft(){
-    cd ~/code/stevebargelt.github.io/_drafts
+    cd ~/code/stevebargelt.com/content/post
     SLUGIFIED="$(echo -n "$1" | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)"
     SLUG=($SLUGIFIED.md)
 
     cat > $SLUG <<front_matter
----
-layout: post
-title: '$1'
-subtitle: 
-portfolio:  
-thumbimage: ''
-image: ''
-author: Steve Bargelt
-category: 
-tags: []
----
++++
+aliases      = []
+categories   = []
+date         = ""
+description  = ""
+featured_image = ""
+draft        = true
+slug         = ""
+tags         = []
+title        = ""
+type         = "post"
+weight       = 0
++++
 ## Be Brilliant
 front_matter
-  cd ../
+  cd ...
   code .
 }
