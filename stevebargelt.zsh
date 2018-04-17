@@ -1,6 +1,6 @@
 #steve bargelt’s aliases
 #place this file in the /.OH-MY-ZSH/custom folder
-alias keyme="/Volumes/fob/load.sh home 8"
+alias keyme="/Volumes/fob/load.sh 8"
 alias reload="source ~/.zshrc"
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
