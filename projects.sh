@@ -1,5 +1,5 @@
 function dockhand(){
-	cd /users/steve/code/go/src/github.com/stevebargelt/dockhand
+	cd /Users/bargelts/code/go/src/github.com/bargeltsbargelt/dockhand
 	if [ "$1" = "e" ]; then
 		code .
 	fi
@@ -11,14 +11,14 @@ function dh() {
 }
 
 function gokata(){
-	cd /users/steve/code/go/src/github.com/stevebargelt/go-katas
+	cd /Users/bargelts/code/go/src/github.com/bargeltsbargelt/go-katas
 	if [ "$1" = "e" ]; then
 		code .
 	fi
 }
 
 function jenkinsDocker(){
-	cd /users/steve/code/jenkinsDocker
+	cd /Users/bargelts/code/jenkinsDocker
 	if [ "$1" = "e" ]; then
 		code .
 	fi
@@ -30,14 +30,14 @@ function jd(){
 }
 
 function notes(){
-	cd /users/steve/dropbox/notes
+	cd /Users/bargelts/dropbox/notes
 	if [ "$1" = "e" ]; then
 		code .
 	fi
 }
 
 function web(){
-	cd /users/steve/code/stevebargelt.com
+	cd /Users/bargelts/code/stevebargelt.com
 	if [ "$1" = "e" ]; then
 		code .
 	fi
@@ -49,29 +49,41 @@ function blog(){
 }
 
 function ltn(){
-	cd /users/steve/code/laborTubsNorthwest
+	cd /Users/bargelts/code/laborTubsNorthwest
 	if [ "$1" = "e" ]; then
 		code .
 	fi
 }
 
 function scripts(){
-	cd /users/steve/code/scripts
+	cd /Users/bargelts/code/scripts
 	if [ "$1" = "e" ]; then
 		code .
 	fi
 }
 
 function homeassistant(){
-	cd /users/steve/code/home-assistant-config
+	cd /Users/bargelts/code/home-assistant-config
 	if [ "$1" = "e" ]; then
 		code .
 	fi
 }
 
 function ha(){
-	cd /users/steve/code/home-assistant-config
+	cd /Users/bargelts/code/home-assistant-config
 	if [ "$1" = "e" ]; then
 		code .
 	fi
+}
+
+# Work Kiosk UI
+function ui(){
+	cd /Users/bargelts/Agilysys/buy/kiosk/kiosk-ui
+	if [ "$1" = "e" ]; then
+		code .
+	else
+		cd ui
+		yarn serve mock cafe
+	fi
+
 }
