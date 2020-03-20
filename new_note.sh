@@ -1,15 +1,24 @@
 function newnote(){
-    cd ~/agilysys-notes
+    cd ~/notes
     SLUGIFIED="$(echo -n "$1" | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)"
     SLUG=$(date +"%Y-%m-%d"-$SLUGIFIED.md)
 
     cat > $SLUG <<front_matter
----
-layout: note
-title: '$1'
-author: Steve Bargelt
-tags: []
----
+# $1
+
+## Be Brilliant
+front_matter
+  code .
+}
+
+function newnotework(){
+    cd ~/notes-work
+    SLUGIFIED="$(echo -n "$1" | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)"
+    SLUG=$(date +"%Y-%m-%d"-$SLUGIFIED.md)
+
+    cat > $SLUG <<front_matter
+# $1
+
 ## Be Brilliant
 front_matter
   code .

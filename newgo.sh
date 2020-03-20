@@ -3,7 +3,7 @@ function newgo(){
     NEWPATH=$GOPATH/src/github.com/stevebargelt/$SLUGIFIED
     mkdir $NEWPATH
     cd $NEWPATH
-    cat > main.go <<front_matter
+    cat > main.go <<code_starter
 package main
 
 import (
@@ -15,6 +15,6 @@ func main() {
   fmt.Println("Hello, Second Earth!")
 
 }
-front_matter
+code_starter
   code .
 }
